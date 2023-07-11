@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Neucha&family=Noto+Serif&display=swap");
+
+.button_add-liquidity {
+  background-color: rgb(31, 199, 212) !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  margin-top: 20px !important;
+  width: 100% !important;
+  color: white !important;
+  font-family: "kanit" !important;
+}
+
+.button_staking-pool {
+  background-color: rgb(31, 199, 212) !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  color: white !important;
+  font-family: "kanit" !important;
+}
+
+.button_staking-pool:hover {
+  background-color: rgb(106, 216, 224) !important;
+}
+
+.button_add-liquidity:hover {
+  background-color: rgb(106, 216, 224) !important;
+}
+
+.button_staking-harvest {
+  background-color: rgb(31, 199, 212) !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  color: white !important;
+  font-family: "kanit" !important;
+}
+
+.button_staking-harvest:hover {
+  background-color: rgb(106, 216, 224) !important;
+}
+
+.button_staking-unstake {
+  margin-top: 67px !important;
+  padding: 18px !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: "rgb(106,216,224)" !important;
+  border-radius: 10px !important;
+  color: rgb(31, 199, 212) !important;
+  font-family: "kanit" !important;
+}
+
+.button_staking-unstake:hover {
+  border-color: rgb(106, 216, 224) !important;
+}
+
+.button_staking-harvest_all {
+  background-color: rgb(31, 199, 212) !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  margin-top: 20px !important;
+  width: 100% !important;
+  color: white !important;
+  font-family: "kanit" !important;
+}
+
+.button_staking-harvest_all:hover {
+  background-color: rgb(106, 216, 224) !important;
+}
+
+.button_remove-liquidity {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: rgb(31, 199, 212) !important;
+  padding: 15px !important;
+  border-radius: 10px !important;
+  color: rgb(31, 199, 212) !important;
+  font-family: "kanit" !important;
+}
+
+.button_remove-liquidity:hover {
+  border-color: rgb(106, 216, 224) !important;
+  color: rgb(106, 216, 224) !important;
+}
+
+.button__connect-wallet {
+  border-radius: 20px !important;
+  padding: 15px !important;
+  background-color: rgb(106, 216, 224) !important;
+  font-family: "kanit" !important;
+  color: white !important;
+}
+
+.glass-effect {
+  background: url("https://cdn.pixabay.com/photo/2016/03/27/22/06/sea-1284467_1280.jpg"); /* Hình ảnh nền */
+  backdrop-filter: blur(8px); /* Mờ phần tử */
+  background-size: cover; /* Tự động điều chỉnh kích thước hình ảnh để phù hợp với phần tử */
+  background-repeat: no-repeat; /* Ngăn lặp lại hình ảnh nền */
+}

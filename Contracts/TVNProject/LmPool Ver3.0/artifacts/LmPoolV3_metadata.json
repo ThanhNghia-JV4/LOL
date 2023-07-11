@@ -1,0 +1,620 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token0",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_NFTPositionManager",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_oracle",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "NFTPositionManager",
+				"outputs": [
+					{
+						"internalType": "contract IPositionManager",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_upperPrice",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_lowerPrice",
+						"type": "int256"
+					}
+				],
+				"name": "_quoteForAmount0",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_upperPrice",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_lowerPrice",
+						"type": "int256"
+					}
+				],
+				"name": "_quoteForAmount1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_upperPrice",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_lowerPrice",
+						"type": "int256"
+					}
+				],
+				"name": "addLiquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "shares",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint160",
+						"name": "sqrtRatioX96",
+						"type": "uint160"
+					},
+					{
+						"internalType": "uint160",
+						"name": "sqrtRatioAX96",
+						"type": "uint160"
+					},
+					{
+						"internalType": "uint160",
+						"name": "sqrtRatioBX96",
+						"type": "uint160"
+					},
+					{
+						"internalType": "uint128",
+						"name": "_liquidity",
+						"type": "uint128"
+					}
+				],
+				"name": "getAmountsForLiquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_upperPrice",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_lowerPrice",
+						"type": "int256"
+					}
+				],
+				"name": "getLiquidityForAmounts",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "liquidityDelta",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "liquidityOfPool",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "oracle",
+				"outputs": [
+					{
+						"internalType": "contract IOracle",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "removeLiquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reserve0",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reserve1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceID",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountIn",
+						"type": "uint256"
+					}
+				],
+				"name": "swap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token0",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token1",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalFee0",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalFee1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LmPool Ver3.0/LmPoolV3.sol": "LmPoolV3"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5",
+				"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+			"keccak256": "0x5bce51e11f7d194b79ea59fe00c9e8de9fa2c5530124960f29a24d4c740a3266",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7e66dfde185df46104c11bc89d08fa0760737aa59a2b8546a656473d810a8ea4",
+				"dweb:/ipfs/QmXvyqtXPaPss2PD7eqPoSao5Szm2n6UMoiG8TZZDjmChR"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0xa82b58eca1ee256be466e536706850163d2ec7821945abd6b4778cfb3bee37da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e75cf83beb757b8855791088546b8337e9d4684e169400c20d44a515353b708",
+				"dweb:/ipfs/QmYvPafLfoquiDMEj7CKHtvbgHu7TJNPSVPSCjrtjV8HjV"
+			]
+		},
+		"@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+			]
+		},
+		"LmPool Ver3.0/IPositionManager.sol": {
+			"keccak256": "0xf6175550146ca01d984fed967a99dcceb4a3beafcf5b111e99d34596dcd49adf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3b78f385dd3cea1b5f03d58e0ce820dc10ea8e6704eec8c45361442544be6a51",
+				"dweb:/ipfs/QmRFhDVS32bneHuTw6FazuwyK6t7Ly22PXZGY1i9cKompU"
+			]
+		},
+		"LmPool Ver3.0/Libraries/FixedPoint96.sol": {
+			"keccak256": "0xb677c7af76c11c1704a190cf481c7d3a2af14a4b4db7547d0f03dff690ee4e1e",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://e8bad520b080ec871ff19a4a5e3c3a49f3e3a33246053a19fbad50c112232f19",
+				"dweb:/ipfs/QmZ7G5wybxuewsi5RCRYTWXmDg76X7agHGrPWEPLohr4vm"
+			]
+		},
+		"LmPool Ver3.0/Libraries/FullMath.sol": {
+			"keccak256": "0x3926b9afe29dab6dd7c7889ea86f730c3486fd5ab03695d79e22e10a2a273166",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ad205135d8be766a2e7434c1e4ed6f03168fa4147799e021311db8573acc94fe",
+				"dweb:/ipfs/QmYJKznkSoXQpzeo7G8t44MtrQFxiG635hgVNqapPWKvCS"
+			]
+		},
+		"LmPool Ver3.0/Libraries/LiquidityAmounts.sol": {
+			"keccak256": "0x331f20ac4e0c136a30b73cf3cf6b442322aba0293a0c8f9300727584d01c1a26",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://d9d07b99829960f978b664381c0ba01e10015964eb40e942b84d7d313758b62d",
+				"dweb:/ipfs/QmfJFNkExhso3PzwJZaZWQ2gn23SDNVSPBwCYYPU22ma1s"
+			]
+		},
+		"LmPool Ver3.0/Libraries/PriceMath.sol": {
+			"keccak256": "0x16a391598172cc2370a6a8d3c96e18e7b8fdb043c42114b5d106956a28421d71",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e18d48d645e24cb9ae9a5dca4af59e10af3d3d9bdd7f5f287a6d979e92119f8",
+				"dweb:/ipfs/QmXWHQxctij4iaCNgo5YzxZJqxmyK2RZqpJVJFLc2PMDx6"
+			]
+		},
+		"LmPool Ver3.0/Libraries/TickMath.sol": {
+			"keccak256": "0x35c71df48f60464009f410e4a7575e5035677af5aa54fc9f8d9555623afd5837",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://c2afb758e5e444f0e8206f9cfcb9403db6b77b1e31437b07a24a1b5a36163b5f",
+				"dweb:/ipfs/QmV3CepuGNEecSF78af5ggFrvDat8ZZjS3Psh17ujHW61n"
+			]
+		},
+		"LmPool Ver3.0/Libraries/sqrtMath.sol": {
+			"keccak256": "0xb26e5529b1eb5aa34f0205451f0feeb35285ddd373f5bb292cc93c46c557d257",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f36bd8152e0af318863bebd84d7b9cb3d09ffb29496dda80786b455320d063f",
+				"dweb:/ipfs/QmeKhLaUwpPcudBQnUYaCCDEcdPZSuYJRYNzcawNdz2oUf"
+			]
+		},
+		"LmPool Ver3.0/LmPoolV3.sol": {
+			"keccak256": "0x4a748b21596f06f35d53425ffaefaf9adfa6ede645ffd7faded654198d6e4ba5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a9abf71ae50080b3e38b18f6f1d2372e0f40680bfdc4e08c09c4a3d9945bae51",
+				"dweb:/ipfs/QmUMmTLuEjBvbfk7gzSX76T139Vg2xYXziE8y2pCKMJ9m8"
+			]
+		},
+		"LmPool Ver3.0/Oracle/IOracle.sol": {
+			"keccak256": "0x57e359c3eefd9c6e770ef4204e7d49821d3d09021959811fecf6cf66fca48eb3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e1018b2204b3a76d6534589e1d0ed1984bc84871d58bcd8f4d9ff1584208e718",
+				"dweb:/ipfs/QmeQGysKxEy24tRqbbd6bGFHubXem8ZZAj1FhVeLVnnfEL"
+			]
+		}
+	},
+	"version": 1
+}

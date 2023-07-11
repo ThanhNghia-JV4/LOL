@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "targets",
+						"type": "address[]"
+					},
+					{
+						"internalType": "bytes[]",
+						"name": "data",
+						"type": "bytes[]"
+					}
+				],
+				"name": "multiCallForHarvest",
+				"outputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "",
+						"type": "bytes[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TVNProject/TVNMulticall/TVNMulticall.sol": "TVNMulticall"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TVNProject/TVNMulticall/TVNMulticall.sol": {
+			"keccak256": "0x25f918967c0dd8d50f0b78e851564cc5db2453691a2807303369ee3b071eccc5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fe9b18d0f0f574d742fdb653b3e06fc22fd3137e66f12f9711257188c3e48cce",
+				"dweb:/ipfs/QmUC9Du8x8pRbExvz3CXPhQx6DYpNSeFZ4VaMwcdqUAKaX"
+			]
+		}
+	},
+	"version": 1
+}

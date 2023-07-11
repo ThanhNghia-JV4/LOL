@@ -1,0 +1,344 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					}
+				],
+				"name": "burnPosition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_shares",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token0",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token1",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint160",
+						"name": "upperTick",
+						"type": "uint160"
+					},
+					{
+						"internalType": "uint160",
+						"name": "lowerTick",
+						"type": "uint160"
+					},
+					{
+						"internalType": "uint128",
+						"name": "deltaLiquidity",
+						"type": "uint128"
+					}
+				],
+				"name": "mintParams",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "shares",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "token0",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "token1",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fee",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount0",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint160",
+								"name": "upperTick",
+								"type": "uint160"
+							},
+							{
+								"internalType": "uint160",
+								"name": "lowerTick",
+								"type": "uint160"
+							},
+							{
+								"internalType": "uint128",
+								"name": "deltaLiquidity",
+								"type": "uint128"
+							}
+						],
+						"internalType": "struct IPositionManager.PositionInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "shares",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "token0",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "token1",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fee",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount0",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint160",
+								"name": "upperTick",
+								"type": "uint160"
+							},
+							{
+								"internalType": "uint160",
+								"name": "lowerTick",
+								"type": "uint160"
+							},
+							{
+								"internalType": "uint128",
+								"name": "deltaLiquidity",
+								"type": "uint128"
+							}
+						],
+						"internalType": "struct IPositionManager.PositionInfo",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "mintPosition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "positions",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "shares",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "token0",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "token1",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fee",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount0",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint160",
+								"name": "upperTick",
+								"type": "uint160"
+							},
+							{
+								"internalType": "uint160",
+								"name": "lowerTick",
+								"type": "uint160"
+							},
+							{
+								"internalType": "uint128",
+								"name": "deltaLiquidity",
+								"type": "uint128"
+							}
+						],
+						"internalType": "struct IPositionManager.PositionInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferPosition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LmPool Ver3.0/IPositionManager.sol": "IPositionManager"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LmPool Ver3.0/IPositionManager.sol": {
+			"keccak256": "0xf6175550146ca01d984fed967a99dcceb4a3beafcf5b111e99d34596dcd49adf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3b78f385dd3cea1b5f03d58e0ce820dc10ea8e6704eec8c45361442544be6a51",
+				"dweb:/ipfs/QmRFhDVS32bneHuTw6FazuwyK6t7Ly22PXZGY1i9cKompU"
+			]
+		}
+	},
+	"version": 1
+}

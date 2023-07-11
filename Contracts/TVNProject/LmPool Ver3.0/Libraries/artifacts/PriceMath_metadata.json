@@ -1,0 +1,165 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "price",
+						"type": "int256"
+					}
+				],
+				"name": "priceToSqrtPriceX96",
+				"outputs": [
+					{
+						"internalType": "uint160",
+						"name": "",
+						"type": "uint160"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "sqrtPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint160",
+						"name": "sqrtPriceX96",
+						"type": "uint160"
+					}
+				],
+				"name": "sqrtPriceX96ToPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint160",
+						"name": "price",
+						"type": "uint160"
+					}
+				],
+				"name": "sqrtPriceX96ToTick",
+				"outputs": [
+					{
+						"internalType": "int24",
+						"name": "",
+						"type": "int24"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int24",
+						"name": "tick",
+						"type": "int24"
+					}
+				],
+				"name": "tickToSqrtPriceX96",
+				"outputs": [
+					{
+						"internalType": "uint160",
+						"name": "",
+						"type": "uint160"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LmPool Ver3.0/Libraries/PriceMath.sol": "PriceMath"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LmPool Ver3.0/Libraries/FixedPoint96.sol": {
+			"keccak256": "0xb677c7af76c11c1704a190cf481c7d3a2af14a4b4db7547d0f03dff690ee4e1e",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://e8bad520b080ec871ff19a4a5e3c3a49f3e3a33246053a19fbad50c112232f19",
+				"dweb:/ipfs/QmZ7G5wybxuewsi5RCRYTWXmDg76X7agHGrPWEPLohr4vm"
+			]
+		},
+		"LmPool Ver3.0/Libraries/PriceMath.sol": {
+			"keccak256": "0x16a391598172cc2370a6a8d3c96e18e7b8fdb043c42114b5d106956a28421d71",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e18d48d645e24cb9ae9a5dca4af59e10af3d3d9bdd7f5f287a6d979e92119f8",
+				"dweb:/ipfs/QmXWHQxctij4iaCNgo5YzxZJqxmyK2RZqpJVJFLc2PMDx6"
+			]
+		},
+		"LmPool Ver3.0/Libraries/TickMath.sol": {
+			"keccak256": "0x35c71df48f60464009f410e4a7575e5035677af5aa54fc9f8d9555623afd5837",
+			"license": "GPL-2.0-or-later",
+			"urls": [
+				"bzz-raw://c2afb758e5e444f0e8206f9cfcb9403db6b77b1e31437b07a24a1b5a36163b5f",
+				"dweb:/ipfs/QmV3CepuGNEecSF78af5ggFrvDat8ZZjS3Psh17ujHW61n"
+			]
+		},
+		"LmPool Ver3.0/Libraries/sqrtMath.sol": {
+			"keccak256": "0xb26e5529b1eb5aa34f0205451f0feeb35285ddd373f5bb292cc93c46c557d257",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f36bd8152e0af318863bebd84d7b9cb3d09ffb29496dda80786b455320d063f",
+				"dweb:/ipfs/QmeKhLaUwpPcudBQnUYaCCDEcdPZSuYJRYNzcawNdz2oUf"
+			]
+		}
+	},
+	"version": 1
+}
