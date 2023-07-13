@@ -2,17 +2,14 @@ import {
   Box,
   Flex,
   Heading,
-  Icon,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
   SimpleGrid,
   Spacer,
-  Text,
 } from "@chakra-ui/react";
 import { ConnectWallet } from "@thirdweb-dev/react";
-import { BsThreeDots } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -27,7 +24,7 @@ const Navbar = () => {
       <Flex>
         <Box display={"flex"} justifyContent={"start"} alignContent={"center"}>
           <Heading as="h4" pt={"9px"}>
-            TVNSwap
+            BAOCAOSwap
           </Heading>
           <SimpleGrid
             columns={6}
@@ -36,27 +33,7 @@ const Navbar = () => {
             textAlign="center"
             p={6}
           >
-            <Menu>
-              <MenuButton
-                cursor={"pointer"}
-                _hover={{
-                  color: "teal.500",
-                  fontWeight: "bold",
-                }}
-              >
-                Trade
-              </MenuButton>
-              <MenuList>
-                <MenuItem>Swap</MenuItem>
-                <MenuItem>
-                  <NavLink to={"trade/liquidity"}>Liquidity</NavLink>
-                </MenuItem>
-                <MenuItem>Perpetual</MenuItem>
-                <MenuItem>Bridge</MenuItem>
-                <MenuItem>Limit(V2)</MenuItem>
-                <MenuItem>Buy crypto</MenuItem>
-              </MenuList>
-            </Menu>
+
 
             <Menu
               cursor={"pointer"}
@@ -65,6 +42,9 @@ const Navbar = () => {
                 fontWeight: "bold",
               }}
             >
+              <MenuItem>
+              <NavLink to={"#"}>Home</NavLink>
+              </MenuItem>
               <MenuButton>Earn</MenuButton>
               <MenuList>
                 <MenuItem>
@@ -73,68 +53,9 @@ const Navbar = () => {
                 <MenuItem>
                   <NavLink to={"pools"}>Pools</NavLink>
                 </MenuItem>
-                <MenuItem>Liquidity Staking</MenuItem>
+               
               </MenuList>
             </Menu>
-            <Menu>
-              <MenuButton
-                cursor={"pointer"}
-                _hover={{
-                  color: "teal.500",
-                  fontWeight: "bold",
-                }}
-              >
-                Win
-              </MenuButton>
-              <MenuList>
-                <MenuItem>Trading Reward</MenuItem>
-                <MenuItem>Trading Competition</MenuItem>
-                <MenuItem>Prediction(BETA)</MenuItem>
-                <MenuItem>Lottery</MenuItem>
-                <MenuItem>Limit(V2)</MenuItem>
-                <MenuItem>Pottery(BETA)</MenuItem>
-              </MenuList>
-            </Menu>
-            <Menu>
-              <MenuButton
-                cursor={"pointer"}
-                _hover={{
-                  color: "teal.500",
-                  fontWeight: "bold",
-                }}
-              >
-                NFT
-              </MenuButton>
-              <MenuList>
-                <MenuItem>Overview</MenuItem>
-                <MenuItem>Collections</MenuItem>
-                <MenuItem>Activity</MenuItem>
-              </MenuList>
-            </Menu>
-
-            <Menu>
-              <MenuButton
-                cursor={"pointer"}
-                _hover={{
-                  color: "teal.500",
-                  fontWeight: "bold",
-                }}
-              >
-                Game
-              </MenuButton>
-              <MenuList>
-                <MenuItem>TVN Protectors</MenuItem>
-              </MenuList>
-            </Menu>
-            <Text
-              cursor={"pointer"}
-              _hover={{
-                color: "teal.500",
-                fontWeight: "bold",
-              }}
-            >
-              <Icon as={BsThreeDots} boxSize={5} />
-            </Text>
           </SimpleGrid>
         </Box>
         <Spacer />
