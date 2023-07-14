@@ -69,12 +69,8 @@ const HarvestCard = ({ tokenId, LINKPrice, ETHPrice }) => {
   useEffect(() => {
     if (positionInfo != undefined) {
       const modifyPosition = {
-        amount0: (+ethers.utils.formatUnits(positionInfo.amount0, 18)).toFixed(
-          3
-        ),
-        amount1: (+ethers.utils.formatUnits(positionInfo.amount1, 18)).toFixed(
-          3
-        ),
+        amount0: (+ethers.utils.formatUnits(positionInfo.amount0, 18)).toFixed(3),
+        amount1: (+ethers.utils.formatUnits(positionInfo.amount1, 18)).toFixed(3),
         lowerPrice: formatSqrtPriceX96(positionInfo.lowerTick),
         upperPrice: formatSqrtPriceX96(positionInfo.upperTick),
       };
